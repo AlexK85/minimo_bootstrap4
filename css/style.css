@@ -1,0 +1,233 @@
+body {
+  min-width: 320px;
+  font-size: 14px;
+  font-family: "Playfair Display, serif";
+  color: #626262;
+}
+
+/* все img  адаптивные  */
+img {
+  min-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #b4ad9e;
+}
+
+a:hover {
+  color: #898377;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+h2,
+h3 {
+  margin: 1rem 0;
+  font-size: 30px;
+}
+
+header .navbar-toggler {
+  /* outline: none;  */
+  border: none;
+}
+
+header .navbar-light {
+  background-color: #ffffff;
+  padding: 30px 0;
+}
+
+header .navbar-brand {
+  font-family: "Inconsolata", monospace;
+  font-size: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+header .nav-item {
+  text-transform: uppercase;
+  margin-left: 50px;
+}
+
+header .nav-item a::after {
+  content: "";
+
+  display: block;
+  width: 100%;
+  height: 1px;
+
+  background-color: #ccc;
+  transform: scale(0);
+  transition: all 0.3s;
+}
+
+header .nav-item a:hover::after {
+  transform: scale(1);
+}
+
+.main {
+  margin-top: 20px;
+}
+
+.post-category,
+.link-more {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: #b4ad9e;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.post-title a {
+  color: #626262;
+}
+
+/* <!-------------------------- Реализация карточек --------------------------> */
+.grid-posts {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.grid-posts .card {
+  border: 0;
+  margin-bottom: 50px;
+}
+
+.grid-posts .card-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* управление картинками */
+.grid-posts .card-img-top {
+  max-height: 400px;
+  border-radius: 0;
+}
+
+/* Стилизация кнопки */
+
+.load-more {
+  padding: 1rem 2rem;
+  border-color: #626262;
+  border-radius: 0;
+}
+
+.load-more span {
+  display: none;
+}
+
+/* секция для формы */
+
+.signup {
+  background-color: #f0f0f0;
+  padding: 50px 0;
+}
+
+.signup h3 {
+  color: #333333;
+}
+
+.signup form {
+  margin-top: 40px;
+}
+
+.signup .form-input {
+  position: relative;
+}
+
+.signup .form-control {
+  border: 0;
+  border-bottom: 1px solid #000000;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.signup .form-control:focus {
+  box-shadow: none;
+}
+
+.form-input .btn {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+/* <!--------------------------- Подвал ---------------------------> */
+footer {
+  background-color: #f0f0f0;
+  padding: 40px 0;
+  color: #000000;
+}
+
+.footer-left a {
+  color: #000000;
+  margin-right: 20px;
+}
+
+.footer-right a {
+  color: #626262;
+  margin-left: 20px;
+}
+
+/* large Devices, Wide screens */
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1199px) {
+  .grid-posts .card-img-top {
+    max-height: 300px;
+  }
+}
+
+/* Medium Devices, Desktop */
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 991px) {
+  .grid-posts .card-img-top {
+    max-height: 220px;
+  }
+
+  header .nav-item {
+    margin-left: 0;
+  }
+}
+
+/*  Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 767px) {
+  .grid-posts {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .grid-posts .card {
+    margin-bottom: 30px;
+  }
+
+  .grid-posts .card-img-top {
+    max-height: 100%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .footer-left {
+    margin-bottom: 30px;
+  }
+}
+
+/*  Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .footer-left a {
+    margin-right: 5px;
+  }
+  .footer-right a {
+    margin-left: 5px;
+  }
+}
